@@ -1,0 +1,67 @@
+body{
+    background-color:beige;
+}
+.input{
+    background-color: bisque;
+    width: 220px;
+    height: 60px;
+    font-size: xxx-large;
+    border: 3px solid ;
+    border-radius: 10px;
+    font-family: "Honk", system-ui;
+    text-align:center;
+    margin-bottom: 25px;
+    position: relative;
+    outline: none;
+}
+p{
+    font-family: "Honk", system-ui;
+    font-size: xxx-large;
+}
+#contant{
+    background-color: antiquewhite;
+    text-align: center;
+        border: 3px solid green;
+        border-radius: 50px;
+        padding: auto;
+        margin: auto;
+        width: 500px;
+}
+input[type='button']{
+    font-family: "Honk", system-ui;
+    background-color: bisque;
+    width: 150px;
+    height: 40px;
+    border-color:black ;
+    border-radius: 10px;
+    font-size: large;
+    transition: border-color 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+            
+}
+input[type='button']:hover{
+    border-color:white ;
+    background-color: rgb(80, 177, 197);
+    font-size: x-large;
+}
+
+input::placeholder{
+    font-size: x-large;
+}
+span{
+        font-family: "Honk", system-ui;
+}
+.number span{
+    position: absolute;
+    left: 44%;
+    font-size: 1.5em;
+    pointer-events:none ;
+    text-transform: uppercase;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+.number input:valid~span,
+.number input:focus ~ span{
+    background-color: antiquewhite;
+    transform:translateX(-10px) translateY(-23px) ;
+    font-size: 1.15em;
+}
